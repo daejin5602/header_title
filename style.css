@@ -43,8 +43,30 @@ a{
   display:flex;
   color:white;
   list-style: none;
+  padding-left:0;
 }
 
 .navbar__icons li{
   padding:8px 12px;
+}
+
+@media screen and (max-width:768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar__menu{
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .navbar__menu li{
+    width:100%;
+    text-align: center;
+  }
+  .navbar__icons{
+    justify-content: center;
+    width:100%;
+  }
 }
