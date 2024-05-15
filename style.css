@@ -19,9 +19,7 @@ a{
 
 .navbar__logo{
   font-size: 20px;
-}
-.navbar__logo i{
-  color:#d49466;
+  color:#d49466
 }
 
 .navbar__menu{
@@ -57,6 +55,7 @@ a{
     padding: 8px 24px;
   }
   .navbar__menu{
+    display:none;
     flex-direction: column;
     align-items: center;
     width:100%;
@@ -66,7 +65,21 @@ a{
     text-align: center;
   }
   .navbar__icons{
+    display:none;
     justify-content: center;
     width:100%;
   }
+
+  .navbar__toggle{
+    position: absolute;
+    right:30px;
+    font-size: 20px;
+    color:#d49466
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active{
+    display:flex;
+  }
+
 }
